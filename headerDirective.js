@@ -3,6 +3,4 @@ angular.module('WhiteTreeGaming').directive('headerDirective', function(){
     templateUrl: 'headerDirective.html',
     restrict: 'E',
   }
-
-
 })
