@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="WhiteTreeGaming">
 
 <head>
     <meta charset="utf-8">
@@ -8,31 +8,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <ul>
-                <li>About</li>
-                <li>Careers</li>
-                <li>Games</li>
-                <li>Locations</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="introVids">
-            <span class="intro1">
-                <iframe class="introVid1" type="video/mp4" src="Images/Intro (1).mp4"></iframe>
-            </span>
-            <span class="intro2">
-                <iframe class="introVid2" type="video/mp4" src="Images/Intro (2).mp4"></iframe>
-            </span>
-            <span class="intro3">
-                <iframe class="introVid3" type="video/mp4" src="Images/Intro (3).mp4"></iframe>
-            </span>
-        </div>
-    </header>
+  <header-directive></header-directive>
 
-<script src="./JS/jquery-3.1.1.js"></script>
-<script src="./JS/app.js"></script>
+  <ui-view></ui-view>
+
+  <footer-directive></footer-directive>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="directive.js" charset="utf-8"></script>
+    <script src="js/controllers/aboutCtrl.js" charset="utf-8"></script>
+    <script src="js/controllers/contactCtrl.js" charset="utf-8"></script>
+    <script src="js/controllers/gamesCtrl.js" charset="utf-8"></script>
+    <script src="js/controllers/homeCtrl.js" charset="utf-8"></script>
+    <script src="js/controllers/" charset="utf-8"></script>
 </body>
 
 </html>
