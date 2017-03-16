@@ -1,0 +1,57 @@
+<head>
+  <link rel="stylesheet" href="styles/games.css">
+</head>
+
+<div class="wowCharInfo" ng-controller="gamesCtrl">
+  <input type="text" ng-model="name" placeholder="Character Name">
+  <input type="text" ng-model="realm" placeholder="Realm Name">
+  <button type="button" name="button" value="" ng-click="getCharInfo(name, realm)">Get Character Info</button>
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Character Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chacter Name</td>
+      <td>{{charInfo.name}}</td>
+    </tr>
+    <tr>
+      <td>Character Realm</td>
+      <td>{{charInfo.realm}}</td>
+    </tr>
+    <tr>
+      <td>Character Class</td>
+      <td>{{charInfo.class}}</td>
+    </tr>
+    <tr>
+      <td>Character Race</td>
+      <td>{{charInfo.race}}</td>
+    </tr>
+    <tr>
+      <td>Male/Female</td>
+      <td>{{charInfo.gender}}</td>
+    </tr>
+    <tr>
+      <td>Character Level</td>
+      <td>{{charInfo.level}}</td>
+    </tr>
+    <tr>
+      <td>Achievement Points</td>
+      <td>{{charInfo.achievementPoints}}</td>
+    </tr>
+    <tr>
+      <td>Honorable Kills</td>
+      <td>{{charInfo.totalHonorableKills}}</td>
+    </tr>
+
+
+
+
+  </tbody>
+</table>
+
+
+</div>

@@ -102,7 +102,8 @@ h1 span {
 }
 .leagueTag img {
   position: relative;
-  top: 25%;
+  top: 30%;
+  height: 150px;
 }
 .leagueTag p {
   text-align: center;
@@ -110,7 +111,11 @@ h1 span {
   color: white;
   font-size: 30px;
   left: 3%;
+  top: 10%;
   display: inline-block;
+}
+img {
+  vertical-align: inherit;
 }
 
 
@@ -122,6 +127,9 @@ h1 span {
   .noGamesYet {
     top: 98%;
   }
+  .noGamesYet p {
+    font-size: 30px;
+  }
   .wowTag {
     background-size: cover;
   }
@@ -130,7 +138,7 @@ h1 span {
     top: 20%;
   }
   .wowTag p {
-    font-size: 25px;
+    font-size: 23px;
     top: 15%;
   }
   .overWatchTag {
@@ -142,7 +150,7 @@ h1 span {
   }
   .overWatchTag p {
     font-size: 25px;
-    top: 0;
+    top: 20px;
     left: -15%;
   }
   .leagueTag {
@@ -154,7 +162,7 @@ h1 span {
     top: 35%;
   }
   .leagueTag p {
-    font-size: 25px;
+    font-size: 22px;
     top: 20%;
   }
 
