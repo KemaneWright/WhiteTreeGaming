@@ -1,3 +1,6 @@
+body {
+  height: auto;
+}
 a {
   color: white !important;
 }
@@ -12,6 +15,7 @@ a {
   position: absolute !important;
   top: 0;
   left: 10%;
+  z-index: 1;
 }
 .navbar li {
   display: inline-block;

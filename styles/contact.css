@@ -1,0 +1,14 @@
+.contactLogo {
+  height: 500px;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+.contactText {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  height: 300px;
+  width: 60%;
+  background-color: lightgray;
+}

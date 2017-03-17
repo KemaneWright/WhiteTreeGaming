@@ -2,6 +2,7 @@
   background-image: url("http://media.blizzard.com/wow/media/artwork/wow-bc/region-nagrand-full.jpg");
   background-size: cover;
   height: 100vh;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .wowCharInfo {
@@ -14,6 +15,7 @@
 }
 input {
   background-color: black;
+  width: 175px;
 }
 .gamesH2 {
   text-align: center;
