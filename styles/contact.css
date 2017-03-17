@@ -12,3 +12,9 @@
   width: 60%;
   background-color: lightgray;
 }
+
+@media (max-width: 1762px) {
+  .contactLogo {
+    height: 450px;
+  }
+}
