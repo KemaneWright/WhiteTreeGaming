@@ -1,4 +1,3 @@
-
 a {
   color: white !important;
 }
@@ -51,7 +50,7 @@ a {
 }
 .footbar .links {
   position: relative;
-  top: 7px !important;
+  top: 20px !important;
 }
 
 @media (max-width: 1762px) {

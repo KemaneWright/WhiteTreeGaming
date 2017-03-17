@@ -1,57 +1,95 @@
-<head>
-  <link rel="stylesheet" href="styles/games.css">
-</head>
+<div class="gamesBox">
 
-<div class="wowCharInfo" ng-controller="gamesCtrl">
-  <input type="text" ng-model="name" placeholder="Character Name">
-  <input type="text" ng-model="realm" placeholder="Realm Name">
-  <button type="button" name="button" value="" ng-click="getCharInfo(name, realm)">Get Character Info</button>
+    <h2 class="gamesH2">Pretty much just a WoW page for now</h2>
+    <div class="wowCharInfo">
+        <h1>Pull any character's info</h1>
+        <input type="text" ng-model="name" placeholder="Character Name">
+        <input type="text" ng-model="realm" placeholder="Realm Name">
+        <button type="button" name="button" value="" class="btn btn-primary" ng-click="getCharInfo(name, realm)">Get Character Info</button>
 
-<table class="table table-bordered table-hover">
-  <thead>
-    <tr>
-      <th>Character Info</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Chacter Name</td>
-      <td>{{charInfo.name}}</td>
-    </tr>
-    <tr>
-      <td>Character Realm</td>
-      <td>{{charInfo.realm}}</td>
-    </tr>
-    <tr>
-      <td>Character Class</td>
-      <td>{{charInfo.class}}</td>
-    </tr>
-    <tr>
-      <td>Character Race</td>
-      <td>{{charInfo.race}}</td>
-    </tr>
-    <tr>
-      <td>Male/Female</td>
-      <td>{{charInfo.gender}}</td>
-    </tr>
-    <tr>
-      <td>Character Level</td>
-      <td>{{charInfo.level}}</td>
-    </tr>
-    <tr>
-      <td>Achievement Points</td>
-      <td>{{charInfo.achievementPoints}}</td>
-    </tr>
-    <tr>
-      <td>Honorable Kills</td>
-      <td>{{charInfo.totalHonorableKills}}</td>
-    </tr>
-
-
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Character Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chacter Name</td>
+                    <td>{{charInfo.name}}</td>
+                </tr>
+                <tr>
+                    <td>Character Realm</td>
+                    <td>{{charInfo.realm}}</td>
+                </tr>
+                <tr>
+                    <td>Character Class</td>
+                    <td>{{charInfo.class}}</td>
+                </tr>
+                <tr>
+                    <td>Character Race</td>
+                    <td>{{charInfo.race}}</td>
+                </tr>
+                <tr>
+                    <td>Male/Female</td>
+                    <td>{{charInfo.gender}}</td>
+                </tr>
+                <tr>
+                    <td>Character Level</td>
+                    <td>{{charInfo.level}}</td>
+                </tr>
+                <tr>
+                    <td>Achievement Points</td>
+                    <td>{{charInfo.achievementPoints}}</td>
+                </tr>
+                <tr>
+                    <td>Honorable Kills</td>
+                    <td>{{charInfo.totalHonorableKills}}</td>
+                </tr>
 
 
-  </tbody>
-</table>
 
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bossBox">
+        <button type="button" name="button" class="prev btn btn-danger" ng-click="prev()">Prev</button>
+        <button type="button" name="button" class="next btn btn-success" ng-click="next()">Next</button>
+
+        <h2>{{bossInfo.name}}</h2>
+        <p>{{bossInfo.description}}</p>
+
+        <h2 class="bossStats">Boss Stats</h2>
+        <p>This boss is level: {{bossInfo.level}}</p>
+        <p>With a max health of: {{bossInfo.health}}</p>
+    </div>
+
+    <div class="faveRaces">
+
+        <h1>Some of my favorite wow races/classes below</h1>
+        <div class="alliance prev">
+            <h1 class="allyTitle">The Alliance</h1>
+            <h3>The Night Elves</h3>
+            <img src="http://vignette4.wikia.nocookie.net/wowwiki/images/4/49/Malfurion_Cataclysm.png/revision/latest/scale-to-width-down/287?cb=20150401132948" alt="">
+            <h3>The Worgen</h3>
+            <img src="http://vignette3.wikia.nocookie.net/wowwiki/images/d/d8/Cataclysm_Worgen.png/revision/latest?cb=20090824102232" alt="">
+        </div>
+        <div class="horde next">
+            <h1 class="hordeTitle">The Horde</h1>
+            <h3>The Tauren</h3>
+            <img src="http://i.imgur.com/TiR7uRx.png?5408" alt="">
+            <h3>The Trolls</h3>
+            <img src="http://i64.photobucket.com/albums/h178/katzendrama/Virey/band_troll.gif" alt="">
+        </div>
+        <div class="hunters">
+          <h2>Hunters</h2>
+          <p>Hunters are by far my favorite class <br> I've mained a hunter for as long as I can remember <br> I love they have to ability to tame beasts as battle compaions</p>
+        </div>
+        <div class="druids">
+          <h2>Druids</h2>
+          <p>Druids are my second favorite class <br> They can shapeshift into many forms and perform all roles</p>
+        </div>
+    </div>
 
 </div>

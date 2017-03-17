@@ -1,6 +1,134 @@
+.gamesBox {
+  background-image: url("http://media.blizzard.com/wow/media/artwork/wow-bc/region-nagrand-full.jpg");
+  background-size: cover;
+  height: 100vh;
+}
 
 .wowCharInfo {
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 10%;
+  width: 550px;
+}
+input {
+  background-color: black;
+}
+.gamesH2 {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.bossBox {
+  height: 400px;
+  width: 900px;
+  background-color: lightgray;
+  position: absolute;
+  top: 23%;
+  left: 42%;
+  text-align: center;
+}
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.bossBox h2 {
+  margin-top: 5%;
+  text-align: center;
+}
+.bossBox p {
+  line-height: 30px;
+}
+.faveRaces {
+  text-align: center;
+  color: white;
+  position: relative;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/72/35/18/723518ecde953dff2f96822948e94cbc.jpg");
+  background-size: cover;
+  height: 1410px;
+  top: 100%;
+}
+.faveRaces img {
+  height: 400px;
+  width: 400px;
+}
+.faveRaces h3 {
+  margin-top: 70px;
+}
+.allyTitle {
+  color: blue;
+}
+.hordeTitle {
+  color: red;
+}
+.hunters {
+  position: absolute;
+  margin-top: 10%;
+  left: 33%;
+  width: 650px;
+  height: 300px;
+  background-image: url("http://pm1.narvii.com/6120/00f5909443f9296849cd8d3d42bf3ebfbfd4807f_hq.jpg");
+  color: white;
+  line-height: 30px;
+}
+.hunters h2 {
+  font-size: 40px;
+}
+.hunters p {
+  margin-top: 10%;
+}
+.druids {
+  position: absolute;
+  margin-top: 40%;
+  left: 33%;
+  width: 650px;
+  height: 300px;
+  background-image: url("http://kunikreations.googlepages.com/catbear1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  line-height: 40px;
+}
+.druids h2 {
+  font-size: 40px;
+}
+.druids p {
+  margin-top: 5%;
+}
+
+
+
+
+
+@media (max-width: 1762px) {
+  .wowCharInfo {
+    width: 420px;
+  }
+  .bossBox {
+    width: 750px;
+  }
+  .faveRaces img {
+    height: 300px;
+    width: 300px;
+  }
+  .hunters {
+    left: 28%;
+  }
+  .druids {
+    left: 28%;
+  }
+
+
+
+
+
+
+
+
+
+
 }

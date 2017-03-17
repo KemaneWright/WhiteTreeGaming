@@ -24,4 +24,6 @@ angular.module('WhiteTreeGaming', ['ui.router'])
 
   $urlRouterProvider
     .otherwise('/');
+
+
 })

@@ -1,3 +1,9 @@
+.black {
+  background-color: black;
+  width: 100vw;
+  height: 250vh;
+}
+
 .introVidBG {
   margin: auto;
   position: absolute;
@@ -13,17 +19,17 @@
   left: 19.5%;
   z-index: 1
 }
-h1 {
+.introHook h1 {
   text-align: center;
-  color: white;
-  font-size: 100px;
+  color: white !important;
+  font-size: 100px !important;
   margin-top: 30px;
   margin-bottom: 0;
 }
-h2 {
+.introHook h2 {
   text-align: center;
   color: #87c9ff;
-  font-size: 75px;
+  font-size: 75px !important;
   margin: 0;
 }
 h1 span {
@@ -53,7 +59,6 @@ h1 span {
 }
 .wowTag img {
   position: relative;
-  top: 10%;
 }
 .wowTag p {
   text-align: center;
@@ -61,6 +66,7 @@ h1 span {
   font-size: 30px;
   display: inline-block;
   position: relative;
+  top: 20%;
 }
 .overWatchTag {
   position: absolute;
@@ -76,7 +82,6 @@ h1 span {
 .overWatchTag img {
   height: 250px;
   position: relative;
-  top: 15%;
   left: 80%;
 }
 .overWatchTag p {
@@ -85,7 +90,7 @@ h1 span {
   font-size: 30px;
   display: inline-block;
   position: relative;
-  top: 5%;
+  top: 25%;
   left: -3%;
 
 }
@@ -111,11 +116,8 @@ h1 span {
   color: white;
   font-size: 30px;
   left: 3%;
-  top: 10%;
+  top: 25%;
   display: inline-block;
-}
-img {
-  vertical-align: inherit;
 }
 
 
@@ -135,11 +137,11 @@ img {
   }
   .wowTag img {
     height: 175px;
-    top: 20%;
+    top: 10%;
   }
   .wowTag p {
     font-size: 23px;
-    top: 15%;
+    top: 25%;
   }
   .overWatchTag {
     background-size: cover;
@@ -147,10 +149,11 @@ img {
   }
   .overWatchTag img {
     left: 75%;
+    top: 5%;
   }
   .overWatchTag p {
     font-size: 25px;
-    top: 20px;
+    top: 25%;
     left: -15%;
   }
   .leagueTag {
@@ -163,9 +166,11 @@ img {
   }
   .leagueTag p {
     font-size: 22px;
-    top: 20%;
+    top: 30%;
   }
-
+  .black {
+    height: 280vh;
+  }
 
 
 }
