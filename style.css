@@ -42,8 +42,6 @@ a {
   background-color: #0f03b5;
   color: white;
   font-size: 30px;
-  position: absolute;
-  top: 245%;
 }
 .footbar li {
   display: inline-block;
@@ -62,9 +60,9 @@ a {
     padding-left: 6%;
     padding-right: 9%;
   }
-  .footbar {
+  /*.footbar {
     top: 270%;
-  }
+  }*/
   .footbar .links {
     left: -3% !important;
   }
